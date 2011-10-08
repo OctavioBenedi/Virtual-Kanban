@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<HTML>
+<!--
+
+Copyright (C) 2010  Leandro Vázquez Cervantes (leandro[-at-]leandro[-dot-]org)
+Copyright (C) 2010  Octavio Benedí Sánchez (octaviobenedi[-at-]gmail[-dot-]com)
+Copyright (C) 2010  Verónica Pazos (verocorella[-at-]gmail[-dot-]com)
+
+This program is free software:
+you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY;
+without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see http://www.gnu.org/licenses/.
+
+version 0.3b Leandro mar 19 ene 2011 01:27:28 CET 
+==
+* templates system
+* colorpicker
+
+-->
+
+<HEAD>
+    <TITLE>{{{TITLE}}}</TITLE>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+    <META NAME="keywords" CONTENT="kanban, agile, dashboard, board, SCRUM, visual kanban, virtual kanban, lean, tablero, tablero kanban">
+    <META NAME="description" CONTENT="Virtual kanban is a free online tool, like a phisycal kanban board, for composing your own board online in order to get informed about and control your production proccess">
+    <SCRIPT SRC="./js/jquery.js" TYPE="text/javascript">
+</SCRIPT>
+    <SCRIPT TYPE="text/javascript" SRC="./js/home.js">
+</SCRIPT>
+    <SCRIPT TYPE="text/javascript" SRC="./js/kanban.js">
+</SCRIPT>
+    <SCRIPT SRC="./js/jquery-ui.js" TYPE="text/javascript">
+</SCRIPT>
+
+    <LINK REL="stylesheet" HREF="./css/kanban.css" TYPE="text/css" MEDIA="all">
+    <LINK REL="stylesheet" HREF="./css/jquery-ui.css" TYPE="text/css" MEDIA="all">
+    <LINK REL="stylesheet" HREF="./css/home.css" TYPE="text/css" MEDIA="all">
+    <link rel="shortcut icon" href="./img/VirtualKanban.ico">
+</HEAD>
+<body class="background">
+
+<TABLE WIDTH="99%">
+        <TR>
+            <TD WIDTH="50%"></TD>
+
+            <TD>
+              <div id="galleta">  
+                  <p style="line-height:.1em;">
+                    <small> {{{BLOG}}} </small>
+                  </p>     
+                  <p style="line-height:.1em;">
+                    <small> {{{VERSION}}} </small>
+                  </p> 
+                  <p style="line-height:.1em;">
+                    <small> {{{VERSION_LINK}}} </small>
+                  </p> 
+              </div>
+            </TD>
+        </TR>
+</TABLE>
+   
+   
+     <TABLE ALIGN="center" ID="cabecera">
+        <TR>
+            <TD COLSPAN="2" ALIGN="center">
+                {{{TITLE}}}
+            </TD>
+        </TR>
+
+        <TR>
+            <TD>
+                <H1><IMG SRC="img/mookup/title.png" BORDER="0" ALT="Virtual Kanban"></H1>
+            </TD>
+        </TR>
+    </TABLE>
+    
+	<div id="main_div">
+		<div>
+			<button id="add_task"></button>
+			<button id="add_col"></button>
+			<button id="remove_col"></button>
+		</div>
+		<table class="table rounded" border=1>
+			<tr id="task_pool_header_container">
+				<th class="task_pool_header  dotted_separator"><div class="header_name click"><img class="title_bullet" src="img/mookup/bullet.png" /><span class="title_text">{{{COLUMN_1}}}</span></div><div wip="0" class="WIP">{{{COLUMN_WIP}}}: {{{UNLIMITED}}}</div></th>
+				<th class="task_pool_header  dotted_separator"><div class="header_name click"><img class="title_bullet" src="img/mookup/bullet.png" /><span class="title_text">{{{COLUMN_2}}}</span></div><div wip="0" class="WIP">{{{COLUMN_WIP}}}: {{{UNLIMITED}}}</div></th>
+				<th class="task_pool_header"><div class="header_name click"><img class="title_bullet" src="img/mookup/bullet.png" /><span class="title_text">{{{COLUMN_3}}}</span></div><div wip="0" class="WIP">{{{COLUMN_WIP}}}: {{{UNLIMITED}}}</div></th>
+			</tr>
+			<tr id="task_pool_container">
+				<td class="task_pool dotted_separator"><div/></td>
+				<td class="task_pool dotted_separator"><div /></td>
+				<td class="task_pool"><div /></td>
+			</tr>
+		</table>
+	</div>
+	
+	 <DIV ID="texto" style="display:none">
+        {{{WHAT_IS_TEXT}}}
+    </DIV>
+
+    <P ALIGN="center" ID="footer"><INPUT TYPE="button" ID="txt_btn" VALUE="{{{BUTTON_TEXT}}}"><BR>
+    <SMALL>{{{JOIN}}} <SMALL>  {{COPY}} </SMALL><BR>
+    <IFRAME SRC="http://www.facebook.com/plugins/like.php?href=http://virtualkanban.net&amp;layout=standard&amp;show_faces=true&amp;width=450&amp;action=like&amp;colorscheme=light&amp;height=80" SCROLLING="no" FRAMEBORDER="0" STYLE="border:none; overflow:hidden; width:450px; height:80px;" ALLOWTRANSPARENCY="true"></IFRAME></SMALL></P>
+</BODY>
+</HTML>
+
+</body>
+</html>

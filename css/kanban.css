@@ -1,0 +1,30 @@
+.background{background-color: white; cursor: auto;}
+#main_div{width:100%;text-align:center;margin:0 auto;}
+#add_task{background:transparent url('../img/mookup/new_task.png') no-repeat;width:73px;height:27px;border: none; margin: 0; padding: 0; font-size: 0; line-height: 0; overflow: visible; cursor:pointer}
+#add_col{background:transparent url('../img/mookup/new_column.png') no-repeat;width:89px;height:27px;border: none; margin: 0; padding: 0; font-size: 0; line-height: 0; overflow: visible; cursor:pointer}
+#remove_col{background:transparent url('../img/mookup/delete_column.png') no-repeat;width:104px;height:27px;border: none; margin: 0; padding: 0; font-size: 0; line-height: 0; overflow: visible; cursor:pointer}
+.table{margin:30px auto;min-width:600px;border: 0}
+.table th{width:240px;text-align:center;border: 0;margin:2px;color:#555555}
+.header_input{margin:5px;}
+.title_bullet{height:15px;width:16px;margin-right:5px}
+.table td{height:300px;width:240px;text-align:center;padding:0px 5px 0px 5px;border: none;}
+.dotted_separator{border-right: medium dotted rgb(136, 136, 136) !important;}
+.box_itm{margin:5 5 0 5px;padding:5px;color:#150517;background:#F6E788 url('../img/mookup/card_background.png') repeat-x;border: 1px solid silver;width: 210px;font-size: 0.9em;min-height:120px;}
+.dotted_hr{background:transparent url('../img/mookup/horizontal_dots.png');height:1px;margin:0 20px}
+.name{margin:5px;width:210px;text-align:left;text-indent:20px;text-transform:capitalize;}
+.pbar{height:10px !important;margin:5 20px;}
+.shadow{height:14px;margin:0 0 0 6px;background:transparent url('../img/mookup/post-it_sombra.png') no-repeat;}
+
+.small{font-size: 0.7em;height:20px;margin-right:5px;margin:5px;}
+.option{cursor:pointer;float:right;}
+.click{cursor:pointer;}
+.fright{float:right;}
+.input{color:#150517;background:#DDDDDD;border: 1px solid silver;}
+.clear{clear:both;}
+.rounded{border-radius: 5px;-moz-border-radius: 5px;}
+.colorete{width:21px;height:21px;float:right}
+.close{width:24px;height:24px;}
+.edit{width:24px;height:24px;margin-right: 3px;}
+.save_header{width:24px;height:24px;}
+.save{width:24px;height:24px;}
+.WIP{font-size:0.7em;text-align:right;margin:5px;color:#888888;padding-right:10px}
